@@ -128,15 +128,24 @@ a:hover, a:active, a:focus {
   padding-bottom: 32px;
 }
 
-#about, #work,
-#contact {
+#about, #education, #publications, #work, #HAs {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 80px; 
 }
 
 #about img, #team img {
   border-radius: 5px;
+}
+
+#education {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#publications {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 #work {
@@ -144,7 +153,16 @@ a:hover, a:active, a:focus {
   border-bottom: 1px solid #f0f0f0;
 }
 
+#HAs {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
 #contact {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px; 
+
   text-align: center;
 }
 
@@ -326,7 +344,8 @@ a:hover, a:active, a:focus {
 }
 
 #about .about-thumb {
-  margin-top: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #about .about-thumb strong {
@@ -334,7 +353,6 @@ a:hover, a:active, a:focus {
   display: block;
   padding-top: 4px;
 }
-
 
 
 /*---------------------------------------
@@ -366,10 +384,81 @@ a:hover, a:active, a:focus {
   background: #3d3d3f;
 }
 
+/*---------------------------------------
+  education section              
+-----------------------------------------*/
+
+#education .education-thumb {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+
+#education img {
+  width: 60px;
+  height: 60px;
+}
 
 
 /*---------------------------------------
-  Work section              
+  publications section              
+-----------------------------------------*/
+
+#publications .publications-thumb {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#publications .publications-thumb img {
+  border-radius: 5px;
+}
+
+#publications img {
+  height: 120px;
+}
+
+
+/*---------------------------------------
+  HAs section              
+-----------------------------------------*/
+
+#HAs .work-thumb {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#HAs .work-thumb:hover {
+  background: #ffffff;
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+#HAs .work-thumb img {
+  border-radius: 5px;
+}
+
+
+
+/*---------------------------------------
+  work section              
 -----------------------------------------*/
 
 #work .work-thumb {
@@ -383,7 +472,7 @@ a:hover, a:active, a:focus {
   transition: all ease-in-out 0.4s;
 }
 
-#work .work-thumb:hover {
+#education .work-thumb:hover {
   background: #ffffff;
   box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
   top: -5px;
@@ -392,6 +481,12 @@ a:hover, a:active, a:focus {
 #work .work-thumb img {
   border-radius: 5px;
 }
+
+/* #work img {
+  width: 60px;
+  height: 60px;
+
+} */
 
 
 
